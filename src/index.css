@@ -1,0 +1,90 @@
+:root {
+  --primary: rgb(21, 33, 159);
+  --dark: #131a26;  
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+  padding: 16px;
+  text-align: right;
+  background-color: var(--dark);
+  color: #eee;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.result span {
+  font-size: 14px;
+  color: #888;
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.deletes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deletes button {
+  flex: 1 1 25%;
+  background-color: var(--dark);
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digits button {
+  flex: 1 1 33.336%;
+  max-width: 33.333%;
+  background-color: var(--dark);
+}
+
+.operators {
+  display: flex;
+}
+
+.operators button {
+  flex: 1 1 25%;
+  background-color: var(--primary);
+  font-weight: 700;
+}
